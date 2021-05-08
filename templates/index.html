@@ -9,21 +9,17 @@
     </head>
     <body>
       <div class="loginbox">
-      <form action="{{ url_for('root') }}" method="POST">
-     <center><h2 style="color: white">Put in your Twitter username:</h2></center>
-     <br>
-     <br>
-        <div class="input-field s12">
+        <h1>Put in your Twitter username:</h1>
+          <br>
+          <br>
+          <form action="{{ url_for('root') }}" method="POST">
           <p>Username</p>
           <input type="text" name="twitter_username" id="twitter_username" style="color: white" placeholder="Enter Username without @"><br>
           <br>
           <br>
-          <center><button class="btn btn-light btn-outline-success" type="submit" name="action" >Submit
+          <center><button class="btn btn-light btn-outline-success" type="submit" name="action">Submit
           </button></center>
-        </div>
     </form>
   </div>
-
-</form>
 </body>
 </html>
