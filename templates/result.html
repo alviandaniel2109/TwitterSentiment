@@ -4,14 +4,14 @@
 {% block body %}
 <center><h3 style="color: white">Results for Twitter username @{{ username }}</h3></center>
 
-<div>
+<div style="color: #25D366">
 
-    <p style="color: white"><center>Negative: {{ result.neg }}<br>
+    <p><center>Negative: {{ result.neg }}<br>
     Positive: {{ result.pos }}<br>
     Neutral: {{ result.neut }}
     </p></center>
 
-    <div class="ct-chart ct-perfect-fourth" style="color: black"></div>
+    <div class="ct-chart ct-perfect-fourth" style="color: blue"></div>
 
     <h4>Negative tweets</h4>
     {% for tweet in result.negative_tweets %}
